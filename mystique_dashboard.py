@@ -105,7 +105,6 @@ def translate_query(query, target_language="en"):
         return translated_text, detected_language
     return query, target_language
 
-
 def get_enhanced_chatbot_response(user_input, api_key):
     predefined_responses = {
         "What does this app do?": "This app analyzes telecom logs using AI. It detects anomalies, summarizes logs, and helps identify root causes of network outages.",
@@ -306,37 +305,25 @@ elif option == "Chatbot":
     user_input = st.text_input("Ask a question about the logs:", placeholder="Ask about anomaly detection, root cause analysis, etc.")
     
     if user_input:
-    # Detect language and translate to English
-        try:
-            translated_input, detected_language = translate_query(user_input, target_language="en")
-        except Exception as e:
-            # Fallback if detection/translation fails
-            translated_input = user_input
-            detected_language = "en"
+        # Detect language and translate if necessary
+        translated_input, detected_language = translate_query(user_input)
 
-    # Add user input to chat history
-    st.session_state.messages.append({"role": "user", "content": user_input})
-
-    # Get AI response
-    ai_response = get_enhanced_chatbot_response(translated_input, API_KEY)
-
-    # Translate response back to the original language if necessary
-    if detected_language != "en":
-        try:
+        # Display user input in chat history
+        st.session_state.messages.append({"role": "user", "content": user_input})
+        
+        # Get AI response
+        ai_response = get_enhanced_chatbot_response(translated_input, API_KEY)
+        if detected_language != "en":
             ai_response = translator.translate(ai_response, src="en", dest=detected_language).text
-        except Exception as e:
-            st.error("Translation of the response failed. Showing the response in English.")
 
-    # Add AI response to chat history
-    st.session_state.messages.append({"role": "assistant", "content": ai_response})
-
+        st.session_state.messages.append({"role": "assistant", "content": ai_response})
+        
     # Display conversation
     for message in st.session_state.messages:
         if message["role"] == "user":
             st.write(f"**User:** {message['content']}")
         else:
             st.write(f"**AI:** {message['content']}")
-
 
     st.markdown("### Suggested Questions")
     st.markdown("- What is anomaly detection?")
