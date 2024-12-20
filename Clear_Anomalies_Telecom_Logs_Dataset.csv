@@ -1,0 +1,1001 @@
+timestamp,device,log_level,message
+2024-12-19 00:00:21,Router2,WARNING,Connection lost
+2024-12-19 00:01:45,Router6,ERROR,Device unreachable
+2024-12-19 00:03:30,Router10,INFO,Configuration changed
+2024-12-19 00:08:59,Router7,INFO,Device unreachable
+2024-12-19 00:09:28,Router5,ERROR,Device unreachable
+2024-12-19 00:09:33,Router5,ERROR,Firmware updated
+2024-12-19 00:10:43,Router8,INFO,Firmware updated
+2024-12-19 00:12:16,Router1,ERROR,Device unreachable
+2024-12-19 00:14:18,Router10,WARNING,Authentication failure
+2024-12-19 00:14:31,Router9,ERROR,Firmware updated
+2024-12-19 00:15:17,Router4,WARNING,Device overheating
+2024-12-19 00:17:10,Router5,INFO,Device unreachable
+2024-12-19 00:17:32,Router9,INFO,Authentication failure
+2024-12-19 00:18:40,Router9,INFO,Authentication failure
+2024-12-19 00:19:50,Router7,INFO,Firmware updated
+2024-12-19 00:20:02,Router4,INFO,Connection lost
+2024-12-19 00:20:16,Router2,INFO,Connection timeout
+2024-12-19 00:21:32,Router10,WARNING,Configuration changed
+2024-12-19 00:21:47,Router9,ERROR,Device unreachable
+2024-12-19 00:22:18,Router9,INFO,Connection timeout
+2024-12-19 00:23:58,Router2,INFO,Device overheating
+2024-12-19 00:24:40,Router3,INFO,Packet loss observed
+2024-12-19 00:24:48,Router7,INFO,Connection lost
+2024-12-19 00:28:04,Router10,ERROR,Firmware updated
+2024-12-19 00:28:14,Router1,ERROR,Device unreachable
+2024-12-19 00:28:15,Router9,ERROR,Firmware updated
+2024-12-19 00:28:56,Router8,INFO,Connection timeout
+2024-12-19 00:32:34,Router5,ERROR,Firmware updated
+2024-12-19 00:34:34,Router2,INFO,Connection timeout
+2024-12-19 00:34:41,Router3,INFO,Connection timeout
+2024-12-19 00:35:17,Router4,WARNING,Connection lost
+2024-12-19 00:37:20,Router4,WARNING,Device unreachable
+2024-12-19 00:41:18,Router2,INFO,Configuration changed
+2024-12-19 00:41:25,Router5,INFO,Packet loss observed
+2024-12-19 00:42:00,Router4,INFO,Configuration changed
+2024-12-19 00:43:21,Router6,WARNING,Firmware updated
+2024-12-19 00:47:51,Router9,INFO,Device unreachable
+2024-12-19 00:49:12,Router5,ERROR,Packet loss observed
+2024-12-19 00:49:35,Router9,INFO,Packet loss observed
+2024-12-19 00:49:59,Router2,ERROR,Device overheating
+2024-12-19 00:53:30,Router7,ERROR,Connection timeout
+2024-12-19 00:54:51,Router9,WARNING,High latency detected
+2024-12-19 00:56:14,Router4,INFO,Connection established
+2024-12-19 00:57:23,Router6,WARNING,Connection lost
+2024-12-19 00:59:46,Router6,ERROR,Firmware updated
+2024-12-19 01:01:19,Router10,WARNING,Firmware updated
+2024-12-19 01:04:14,Router7,ERROR,Connection lost
+2024-12-19 01:05:15,Router3,ERROR,Connection timeout
+2024-12-19 01:07:18,Router3,WARNING,High latency detected
+2024-12-19 01:07:46,Router10,INFO,Authentication failure
+2024-12-19 01:07:59,Router2,INFO,Connection timeout
+2024-12-19 01:08:27,Router8,WARNING,Device overheating
+2024-12-19 01:09:53,Router5,ERROR,Connection timeout
+2024-12-19 01:11:36,Router7,INFO,Device overheating
+2024-12-19 01:11:53,Router8,INFO,Configuration changed
+2024-12-19 01:12:30,Router6,WARNING,High latency detected
+2024-12-19 01:13:41,Router9,INFO,Device overheating
+2024-12-19 01:13:43,Router6,WARNING,High latency detected
+2024-12-19 01:13:55,Router10,INFO,Device unreachable
+2024-12-19 01:14:10,Router2,INFO,Packet loss observed
+2024-12-19 01:19:18,Router7,ERROR,Device unreachable
+2024-12-19 01:20:48,Router7,WARNING,Device overheating
+2024-12-19 01:20:58,Router10,INFO,Connection lost
+2024-12-19 01:22:18,Router9,INFO,Connection timeout
+2024-12-19 01:25:14,Router4,INFO,High latency detected
+2024-12-19 01:25:24,Router2,WARNING,Connection established
+2024-12-19 01:26:10,Router6,INFO,Device unreachable
+2024-12-19 01:26:58,Router4,WARNING,High latency detected
+2024-12-19 01:27:01,Router7,INFO,Connection lost
+2024-12-19 01:30:37,Router1,WARNING,High latency detected
+2024-12-19 01:30:45,Router8,WARNING,Device unreachable
+2024-12-19 01:34:12,Router2,INFO,Device unreachable
+2024-12-19 01:36:10,Router7,ERROR,Device unreachable
+2024-12-19 01:36:41,Router9,ERROR,Connection timeout
+2024-12-19 01:37:35,Router1,WARNING,Connection timeout
+2024-12-19 01:38:11,Router2,ERROR,Connection established
+2024-12-19 01:38:46,Router3,INFO,Connection timeout
+2024-12-19 01:40:35,Router8,ERROR,Device unreachable
+2024-12-19 01:40:56,Router6,WARNING,Packet loss observed
+2024-12-19 01:40:56,Router9,WARNING,Firmware updated
+2024-12-19 01:42:43,Router1,INFO,Device unreachable
+2024-12-19 01:47:08,Router7,INFO,Connection timeout
+2024-12-19 01:48:15,Router2,INFO,Configuration changed
+2024-12-19 01:52:01,Router9,ERROR,Connection timeout
+2024-12-19 01:52:57,Router9,WARNING,Device unreachable
+2024-12-19 01:54:56,Router4,ERROR,High latency detected
+2024-12-19 01:56:03,Router7,INFO,Connection lost
+2024-12-19 01:56:42,Router4,ERROR,Authentication failure
+2024-12-19 01:57:45,Router6,INFO,Device unreachable
+2024-12-19 01:58:18,Router1,ERROR,Device unreachable
+2024-12-19 02:01:00,Router3,WARNING,Authentication failure
+2024-12-19 02:04:58,Router10,WARNING,Device unreachable
+2024-12-19 02:07:36,Router6,ERROR,Device overheating
+2024-12-19 02:08:00,Router7,ERROR,Device unreachable
+2024-12-19 02:08:18,Router1,ERROR,Device overheating
+2024-12-19 02:09:59,Router10,ERROR,Authentication failure
+2024-12-19 02:10:05,Router8,ERROR,Connection lost
+2024-12-19 02:10:39,Router7,INFO,Device unreachable
+2024-12-19 02:12:35,Router7,ERROR,Authentication failure
+2024-12-19 02:13:38,Router6,WARNING,Packet loss observed
+2024-12-19 02:14:11,Router8,ERROR,Device unreachable
+2024-12-19 02:16:12,Router8,WARNING,Authentication failure
+2024-12-19 02:17:27,Router6,WARNING,Connection lost
+2024-12-19 02:17:44,Router1,WARNING,Configuration changed
+2024-12-19 02:17:55,Router1,ERROR,Connection established
+2024-12-19 02:18:25,Router2,ERROR,Authentication failure
+2024-12-19 02:18:54,Router6,WARNING,Connection lost
+2024-12-19 02:22:55,Router9,INFO,Device overheating
+2024-12-19 02:25:18,Router7,INFO,Connection established
+2024-12-19 02:25:51,Router8,WARNING,Connection lost
+2024-12-19 02:25:55,Router1,INFO,Device overheating
+2024-12-19 02:25:57,Router7,INFO,Connection lost
+2024-12-19 02:26:35,Router1,INFO,Device overheating
+2024-12-19 02:26:43,Router5,INFO,Packet loss observed
+2024-12-19 02:26:47,Router4,INFO,High latency detected
+2024-12-19 02:29:54,Router5,WARNING,Connection lost
+2024-12-19 02:30:51,Router6,INFO,Device unreachable
+2024-12-19 02:32:28,Router2,ERROR,Device overheating
+2024-12-19 02:36:07,Router4,ERROR,Connection timeout
+2024-12-19 02:36:31,Router8,ERROR,Device unreachable
+2024-12-19 02:38:48,Router9,INFO,Packet loss observed
+2024-12-19 02:40:41,Router7,WARNING,Device overheating
+2024-12-19 02:41:20,Router5,WARNING,Connection timeout
+2024-12-19 02:42:23,Router2,INFO,Packet loss observed
+2024-12-19 02:42:41,Router2,INFO,Packet loss observed
+2024-12-19 02:43:59,Router3,ERROR,Device overheating
+2024-12-19 02:45:00,Router8,WARNING,Packet loss observed
+2024-12-19 02:45:13,Router9,WARNING,Connection timeout
+2024-12-19 02:46:16,Router2,WARNING,Configuration changed
+2024-12-19 02:49:00,Router5,INFO,Configuration changed
+2024-12-19 02:53:45,Router1,ERROR,Connection timeout
+2024-12-19 02:54:26,Router10,INFO,Device overheating
+2024-12-19 02:54:43,Router7,ERROR,Device overheating
+2024-12-19 02:55:32,Router3,ERROR,Device overheating
+2024-12-19 02:55:40,Router2,ERROR,Device overheating
+2024-12-19 02:56:00,Router10,INFO,Authentication failure
+2024-12-19 02:57:29,Router3,ERROR,Device overheating
+2024-12-19 03:02:13,Router9,INFO,Connection established
+2024-12-19 03:02:19,Router10,WARNING,Authentication failure
+2024-12-19 03:04:48,Router6,ERROR,Packet loss observed
+2024-12-19 03:05:27,Router2,WARNING,Authentication failure
+2024-12-19 03:08:36,Router2,ERROR,Connection timeout
+2024-12-19 03:08:39,Router8,INFO,Connection established
+2024-12-19 03:16:36,Router4,WARNING,Connection lost
+2024-12-19 03:16:52,Router2,INFO,Device overheating
+2024-12-19 03:17:22,Router8,INFO,Configuration changed
+2024-12-19 03:17:41,Router4,ERROR,Authentication failure
+2024-12-19 03:18:03,Router10,INFO,High latency detected
+2024-12-19 03:20:24,Router1,ERROR,Firmware updated
+2024-12-19 03:22:25,Router10,ERROR,Device unreachable
+2024-12-19 03:22:37,Router1,WARNING,Connection timeout
+2024-12-19 03:24:02,Router10,ERROR,Device overheating
+2024-12-19 03:26:08,Router2,ERROR,Device overheating
+2024-12-19 03:26:56,Router4,WARNING,Connection timeout
+2024-12-19 03:31:38,Router2,ERROR,Connection lost
+2024-12-19 03:31:49,Router2,WARNING,Connection timeout
+2024-12-19 03:34:13,Router7,ERROR,Connection timeout
+2024-12-19 03:34:31,Router3,INFO,Device unreachable
+2024-12-19 03:34:53,Router8,WARNING,Device unreachable
+2024-12-19 03:36:02,Router1,ERROR,Device overheating
+2024-12-19 03:36:41,Router10,INFO,Connection timeout
+2024-12-19 03:37:26,Router7,INFO,Firmware updated
+2024-12-19 03:42:17,Router9,INFO,High latency detected
+2024-12-19 03:43:24,Router5,WARNING,High latency detected
+2024-12-19 03:45:02,Router5,INFO,Authentication failure
+2024-12-19 03:45:50,Router5,WARNING,Authentication failure
+2024-12-19 03:47:46,Router8,INFO,Connection established
+2024-12-19 03:48:53,Router4,ERROR,Configuration changed
+2024-12-19 03:49:49,Router3,ERROR,Connection established
+2024-12-19 03:50:32,Router9,ERROR,Connection timeout
+2024-12-19 03:51:50,Router5,ERROR,Device unreachable
+2024-12-19 03:52:02,Router2,ERROR,Connection established
+2024-12-19 03:52:50,Router3,WARNING,Device overheating
+2024-12-19 03:53:24,Router7,ERROR,Device overheating
+2024-12-19 03:53:24,Router1,ERROR,Connection timeout
+2024-12-19 03:54:08,Router6,ERROR,Connection established
+2024-12-19 03:55:34,Router7,INFO,High latency detected
+2024-12-19 03:56:53,Router7,ERROR,Authentication failure
+2024-12-19 03:57:59,Router6,INFO,Connection established
+2024-12-19 03:58:01,Router7,WARNING,Connection lost
+2024-12-19 03:58:22,Router6,INFO,Configuration changed
+2024-12-19 03:58:41,Router10,WARNING,Firmware updated
+2024-12-19 04:00:21,Router1,ERROR,Connection timeout
+2024-12-19 04:01:19,Router9,INFO,Firmware updated
+2024-12-19 04:01:32,Router3,INFO,Connection timeout
+2024-12-19 04:05:31,Router1,INFO,Connection established
+2024-12-19 04:07:59,Router8,WARNING,Device unreachable
+2024-12-19 04:08:16,Router2,INFO,Authentication failure
+2024-12-19 04:09:01,Router3,WARNING,Device overheating
+2024-12-19 04:09:58,Router7,WARNING,Authentication failure
+2024-12-19 04:11:05,Router3,INFO,Configuration changed
+2024-12-19 04:11:53,Router8,ERROR,Device overheating
+2024-12-19 04:18:04,Router6,INFO,Packet loss observed
+2024-12-19 04:19:21,Router9,WARNING,Configuration changed
+2024-12-19 04:20:25,Router8,ERROR,High latency detected
+2024-12-19 04:21:10,Router6,WARNING,Connection timeout
+2024-12-19 04:22:47,Router6,WARNING,Firmware updated
+2024-12-19 04:22:47,Router8,INFO,Firmware updated
+2024-12-19 04:23:55,Router4,ERROR,Connection established
+2024-12-19 04:24:15,Router10,INFO,Firmware updated
+2024-12-19 04:26:27,Router1,INFO,Configuration changed
+2024-12-19 04:27:09,Router1,ERROR,Authentication failure
+2024-12-19 04:27:21,Router6,WARNING,Firmware updated
+2024-12-19 04:28:57,Router1,WARNING,Connection established
+2024-12-19 04:29:27,Router3,ERROR,Connection timeout
+2024-12-19 04:30:23,Router4,INFO,Device unreachable
+2024-12-19 04:32:40,Router3,INFO,Connection timeout
+2024-12-19 04:38:36,Router6,WARNING,Authentication failure
+2024-12-19 04:40:36,Router1,INFO,Configuration changed
+2024-12-19 04:41:42,Router10,ERROR,Connection established
+2024-12-19 04:44:27,Router3,WARNING,Firmware updated
+2024-12-19 04:47:25,Router10,INFO,Connection timeout
+2024-12-19 04:53:18,Router3,INFO,Connection timeout
+2024-12-19 04:53:26,Router10,INFO,Connection timeout
+2024-12-19 04:54:42,Router7,ERROR,Connection timeout
+2024-12-19 04:55:50,Router3,INFO,Packet loss observed
+2024-12-19 04:57:42,Router9,WARNING,Connection established
+2024-12-19 05:03:38,Router7,INFO,Device unreachable
+2024-12-19 05:05:32,Router9,ERROR,Connection timeout
+2024-12-19 05:05:46,Router1,INFO,Connection established
+2024-12-19 05:07:35,Router7,INFO,Authentication failure
+2024-12-19 05:09:36,Router4,WARNING,Connection established
+2024-12-19 05:09:53,Router1,INFO,Configuration changed
+2024-12-19 05:11:02,Router9,ERROR,Device overheating
+2024-12-19 05:12:24,Router6,ERROR,Connection timeout
+2024-12-19 05:15:41,Router5,ERROR,Connection established
+2024-12-19 05:18:05,Router2,INFO,Authentication failure
+2024-12-19 05:19:12,Router1,ERROR,Configuration changed
+2024-12-19 05:21:14,Router7,WARNING,High latency detected
+2024-12-19 05:22:33,Router10,INFO,Connection lost
+2024-12-19 05:23:52,Router7,WARNING,Firmware updated
+2024-12-19 05:24:24,Router10,WARNING,Configuration changed
+2024-12-19 05:24:32,Router3,ERROR,Device overheating
+2024-12-19 05:25:36,Router3,ERROR,Device overheating
+2024-12-19 05:26:14,Router4,INFO,Connection timeout
+2024-12-19 05:26:23,Router6,ERROR,Packet loss observed
+2024-12-19 05:28:05,Router2,INFO,Connection timeout
+2024-12-19 05:29:00,Router5,WARNING,Connection timeout
+2024-12-19 05:29:39,Router10,INFO,Connection established
+2024-12-19 05:32:00,Router3,INFO,Device unreachable
+2024-12-19 05:32:16,Router10,WARNING,Authentication failure
+2024-12-19 05:32:18,Router9,ERROR,Device overheating
+2024-12-19 05:32:32,Router3,WARNING,Connection timeout
+2024-12-19 05:33:46,Router1,INFO,Device unreachable
+2024-12-19 05:34:33,Router4,ERROR,Device overheating
+2024-12-19 05:36:48,Router4,WARNING,High latency detected
+2024-12-19 05:37:00,Router4,WARNING,Configuration changed
+2024-12-19 05:37:13,Router10,INFO,Device unreachable
+2024-12-19 05:37:37,Router2,INFO,Connection lost
+2024-12-19 05:38:13,Router2,WARNING,Device overheating
+2024-12-19 05:39:14,Router5,ERROR,High latency detected
+2024-12-19 05:42:25,Router3,INFO,Device overheating
+2024-12-19 05:42:36,Router4,INFO,Firmware updated
+2024-12-19 05:46:20,Router8,INFO,Authentication failure
+2024-12-19 05:47:29,Router10,ERROR,Configuration changed
+2024-12-19 05:49:13,Router8,WARNING,Device unreachable
+2024-12-19 05:50:18,Router10,INFO,Authentication failure
+2024-12-19 05:51:34,Router5,WARNING,Packet loss observed
+2024-12-19 05:55:45,Router5,WARNING,Configuration changed
+2024-12-19 05:56:45,Router8,WARNING,Connection timeout
+2024-12-19 05:57:16,Router1,INFO,Authentication failure
+2024-12-19 05:58:00,Router1,INFO,Device overheating
+2024-12-19 06:00:03,Router1,WARNING,Device unreachable
+2024-12-19 06:00:18,Router6,WARNING,Device unreachable
+2024-12-19 06:01:20,Router10,WARNING,Connection lost
+2024-12-19 06:02:27,Router10,WARNING,Firmware updated
+2024-12-19 06:08:55,Router9,WARNING,Firmware updated
+2024-12-19 06:11:17,Router2,INFO,Configuration changed
+2024-12-19 06:13:22,Router7,INFO,Device overheating
+2024-12-19 06:15:24,Router6,WARNING,Device unreachable
+2024-12-19 06:15:40,Router3,INFO,Connection lost
+2024-12-19 06:17:01,Router6,INFO,Connection timeout
+2024-12-19 06:20:23,Router1,WARNING,Firmware updated
+2024-12-19 06:23:43,Router8,WARNING,High latency detected
+2024-12-19 06:25:32,Router7,ERROR,High latency detected
+2024-12-19 06:26:37,Router10,ERROR,Device unreachable
+2024-12-19 06:29:15,Router8,INFO,Firmware updated
+2024-12-19 06:32:00,Router7,ERROR,Packet loss observed
+2024-12-19 06:34:58,Router8,WARNING,Firmware updated
+2024-12-19 06:35:16,Router8,ERROR,Authentication failure
+2024-12-19 06:36:23,Router5,INFO,Device overheating
+2024-12-19 06:36:39,Router7,INFO,High latency detected
+2024-12-19 06:36:55,Router8,INFO,Connection timeout
+2024-12-19 06:37:10,Router3,WARNING,Device unreachable
+2024-12-19 06:37:15,Router8,ERROR,High latency detected
+2024-12-19 06:37:44,Router1,INFO,Device unreachable
+2024-12-19 06:39:47,Router3,ERROR,Authentication failure
+2024-12-19 06:40:20,Router6,ERROR,Connection timeout
+2024-12-19 06:43:46,Router9,INFO,Connection established
+2024-12-19 06:44:57,Router9,WARNING,High latency detected
+2024-12-19 06:45:10,Router8,INFO,Device overheating
+2024-12-19 06:45:29,Router10,ERROR,Firmware updated
+2024-12-19 06:46:11,Router1,WARNING,Firmware updated
+2024-12-19 06:46:15,Router9,INFO,Connection lost
+2024-12-19 06:47:37,Router7,INFO,Firmware updated
+2024-12-19 06:49:06,Router5,WARNING,Packet loss observed
+2024-12-19 06:50:19,Router10,INFO,Connection established
+2024-12-19 06:54:06,Router3,INFO,Authentication failure
+2024-12-19 06:54:16,Router6,INFO,Device unreachable
+2024-12-19 06:55:08,Router6,ERROR,Device overheating
+2024-12-19 06:57:37,Router3,ERROR,Device unreachable
+2024-12-19 06:59:07,Router2,ERROR,Device overheating
+2024-12-19 07:01:48,Router3,INFO,Connection lost
+2024-12-19 07:03:35,Router2,ERROR,Device overheating
+2024-12-19 07:06:01,Router5,ERROR,Authentication failure
+2024-12-19 07:07:32,Router8,WARNING,Connection lost
+2024-12-19 07:08:07,Router4,INFO,Configuration changed
+2024-12-19 07:09:11,Router5,WARNING,Packet loss observed
+2024-12-19 07:10:05,Router1,INFO,Packet loss observed
+2024-12-19 07:10:06,Router3,ERROR,Connection established
+2024-12-19 07:11:31,Router2,WARNING,Authentication failure
+2024-12-19 07:11:33,Router4,ERROR,Authentication failure
+2024-12-19 07:11:49,Router5,ERROR,Authentication failure
+2024-12-19 07:13:28,Router10,WARNING,Packet loss observed
+2024-12-19 07:15:33,Router2,WARNING,Firmware updated
+2024-12-19 07:15:40,Router4,ERROR,Connection timeout
+2024-12-19 07:16:16,Router4,ERROR,Connection timeout
+2024-12-19 07:17:23,Router7,ERROR,Firmware updated
+2024-12-19 07:21:26,Router3,ERROR,Configuration changed
+2024-12-19 07:22:02,Router10,ERROR,Authentication failure
+2024-12-19 07:22:49,Router4,INFO,Connection established
+2024-12-19 07:24:00,Router1,ERROR,Connection timeout
+2024-12-19 07:25:19,Router7,ERROR,Device overheating
+2024-12-19 07:25:44,Router1,INFO,Authentication failure
+2024-12-19 07:27:48,Router5,ERROR,High latency detected
+2024-12-19 07:29:56,Router10,WARNING,Authentication failure
+2024-12-19 07:32:52,Router3,INFO,Authentication failure
+2024-12-19 07:33:53,Router9,INFO,Device overheating
+2024-12-19 07:37:10,Router8,INFO,Authentication failure
+2024-12-19 07:37:22,Router3,INFO,Firmware updated
+2024-12-19 07:37:46,Router3,ERROR,Device overheating
+2024-12-19 07:44:04,Router7,INFO,Device overheating
+2024-12-19 07:47:34,Router7,INFO,Connection timeout
+2024-12-19 07:47:50,Router8,ERROR,Device unreachable
+2024-12-19 07:49:25,Router10,WARNING,High latency detected
+2024-12-19 07:50:26,Router6,INFO,Device overheating
+2024-12-19 07:52:41,Router10,INFO,Packet loss observed
+2024-12-19 07:56:23,Router9,ERROR,Firmware updated
+2024-12-19 07:56:44,Router3,ERROR,Device unreachable
+2024-12-19 07:58:37,Router3,INFO,Packet loss observed
+2024-12-19 07:59:53,Router6,ERROR,Connection timeout
+2024-12-19 08:00:27,Router10,INFO,Authentication failure
+2024-12-19 08:00:54,Router2,INFO,Connection established
+2024-12-19 08:01:09,Router2,WARNING,Connection lost
+2024-12-19 08:01:35,Router1,INFO,Packet loss observed
+2024-12-19 08:03:31,Router6,WARNING,Device overheating
+2024-12-19 08:05:44,Router4,ERROR,Authentication failure
+2024-12-19 08:06:05,Router7,INFO,Connection established
+2024-12-19 08:09:03,Router7,ERROR,Device overheating
+2024-12-19 08:09:26,Router3,ERROR,Connection established
+2024-12-19 08:12:06,Router2,WARNING,Device overheating
+2024-12-19 08:12:45,Router4,ERROR,Device unreachable
+2024-12-19 08:13:55,Router10,ERROR,Connection timeout
+2024-12-19 08:14:22,Router9,INFO,Connection established
+2024-12-19 08:15:19,Router8,ERROR,Connection timeout
+2024-12-19 08:16:57,Router4,INFO,Firmware updated
+2024-12-19 08:18:01,Router7,WARNING,Connection lost
+2024-12-19 08:21:21,Router3,ERROR,Connection timeout
+2024-12-19 08:21:56,Router5,WARNING,Packet loss observed
+2024-12-19 08:22:14,Router3,INFO,Connection established
+2024-12-19 08:22:57,Router5,INFO,Device unreachable
+2024-12-19 08:24:15,Router7,ERROR,Authentication failure
+2024-12-19 08:28:10,Router10,WARNING,Device unreachable
+2024-12-19 08:29:56,Router4,ERROR,Device overheating
+2024-12-19 08:32:28,Router3,INFO,High latency detected
+2024-12-19 08:33:54,Router8,INFO,Connection established
+2024-12-19 08:34:15,Router8,ERROR,Device unreachable
+2024-12-19 08:37:26,Router1,ERROR,Device overheating
+2024-12-19 08:37:41,Router1,INFO,Packet loss observed
+2024-12-19 08:39:46,Router6,INFO,Connection timeout
+2024-12-19 08:40:08,Router6,INFO,Connection established
+2024-12-19 08:40:28,Router3,ERROR,Connection timeout
+2024-12-19 08:41:30,Router5,WARNING,Configuration changed
+2024-12-19 08:43:01,Router2,INFO,Device unreachable
+2024-12-19 08:47:46,Router8,ERROR,Authentication failure
+2024-12-19 08:48:53,Router10,INFO,Firmware updated
+2024-12-19 08:51:14,Router8,WARNING,Authentication failure
+2024-12-19 08:53:20,Router9,ERROR,Device overheating
+2024-12-19 08:53:53,Router3,WARNING,Device overheating
+2024-12-19 08:54:03,Router9,INFO,Device overheating
+2024-12-19 08:57:58,Router8,ERROR,Authentication failure
+2024-12-19 08:57:59,Router5,INFO,Device unreachable
+2024-12-19 08:59:50,Router7,ERROR,Device overheating
+2024-12-19 08:59:53,Router5,INFO,Connection lost
+2024-12-19 09:00:36,Router7,INFO,Connection lost
+2024-12-19 09:00:57,Router5,INFO,Device unreachable
+2024-12-19 09:01:02,Router4,ERROR,Authentication failure
+2024-12-19 09:01:26,Router2,INFO,Authentication failure
+2024-12-19 09:03:22,Router9,WARNING,Connection timeout
+2024-12-19 09:03:40,Router9,INFO,Packet loss observed
+2024-12-19 09:05:09,Router4,WARNING,Authentication failure
+2024-12-19 09:07:21,Router1,WARNING,Connection lost
+2024-12-19 09:07:24,Router10,WARNING,Authentication failure
+2024-12-19 09:08:30,Router10,WARNING,Firmware updated
+2024-12-19 09:09:21,Router5,INFO,Connection timeout
+2024-12-19 09:14:22,Router5,ERROR,Device unreachable
+2024-12-19 09:18:28,Router4,WARNING,Device unreachable
+2024-12-19 09:19:31,Router1,ERROR,Authentication failure
+2024-12-19 09:19:33,Router1,INFO,Connection established
+2024-12-19 09:20:46,Router1,INFO,Connection lost
+2024-12-19 09:20:59,Router10,INFO,Device unreachable
+2024-12-19 09:26:08,Router10,ERROR,Device overheating
+2024-12-19 09:26:40,Router5,ERROR,Device unreachable
+2024-12-19 09:27:48,Router1,INFO,Authentication failure
+2024-12-19 09:29:00,Router2,INFO,Device overheating
+2024-12-19 09:31:14,Router4,INFO,Firmware updated
+2024-12-19 09:31:20,Router5,INFO,Packet loss observed
+2024-12-19 09:31:46,Router2,INFO,Device unreachable
+2024-12-19 09:32:26,Router6,WARNING,Device unreachable
+2024-12-19 09:37:20,Router4,ERROR,Connection established
+2024-12-19 09:40:28,Router9,INFO,Connection established
+2024-12-19 09:43:10,Router6,INFO,Connection established
+2024-12-19 09:43:41,Router4,WARNING,Authentication failure
+2024-12-19 09:45:10,Router4,WARNING,Connection timeout
+2024-12-19 09:46:15,Router9,ERROR,Device overheating
+2024-12-19 09:47:11,Router9,WARNING,Connection established
+2024-12-19 09:49:25,Router9,INFO,Connection timeout
+2024-12-19 09:51:54,Router1,INFO,Firmware updated
+2024-12-19 09:52:04,Router10,INFO,Configuration changed
+2024-12-19 09:53:25,Router4,INFO,Connection established
+2024-12-19 09:54:09,Router6,ERROR,Packet loss observed
+2024-12-19 10:00:58,Router7,INFO,Firmware updated
+2024-12-19 10:01:44,Router6,WARNING,Device overheating
+2024-12-19 10:04:26,Router10,INFO,Connection lost
+2024-12-19 10:06:20,Router8,INFO,Packet loss observed
+2024-12-19 10:07:58,Router7,ERROR,Device overheating
+2024-12-19 10:08:31,Router1,WARNING,Connection lost
+2024-12-19 10:08:54,Router3,ERROR,Configuration changed
+2024-12-19 10:12:39,Router5,WARNING,Authentication failure
+2024-12-19 10:13:13,Router8,INFO,Authentication failure
+2024-12-19 10:14:11,Router8,ERROR,Authentication failure
+2024-12-19 10:14:36,Router6,ERROR,Authentication failure
+2024-12-19 10:23:50,Router3,ERROR,Device overheating
+2024-12-19 10:24:40,Router2,ERROR,High latency detected
+2024-12-19 10:25:46,Router2,ERROR,Connection timeout
+2024-12-19 10:26:01,Router8,INFO,High latency detected
+2024-12-19 10:28:41,Router8,ERROR,Device overheating
+2024-12-19 10:32:29,Router3,INFO,High latency detected
+2024-12-19 10:35:16,Router8,ERROR,Connection timeout
+2024-12-19 10:35:35,Router6,INFO,Device overheating
+2024-12-19 10:40:48,Router5,WARNING,Device unreachable
+2024-12-19 10:42:23,Router7,WARNING,High latency detected
+2024-12-19 10:42:35,Router5,INFO,Connection established
+2024-12-19 10:45:26,Router6,ERROR,Connection timeout
+2024-12-19 10:45:34,Router9,ERROR,Connection lost
+2024-12-19 10:47:48,Router1,ERROR,Device unreachable
+2024-12-19 10:50:25,Router10,INFO,Packet loss observed
+2024-12-19 10:53:10,Router5,INFO,High latency detected
+2024-12-19 10:54:29,Router2,ERROR,Device unreachable
+2024-12-19 10:55:26,Router9,INFO,Authentication failure
+2024-12-19 10:57:50,Router2,ERROR,Authentication failure
+2024-12-19 10:58:25,Router5,INFO,Connection timeout
+2024-12-19 10:58:52,Router8,INFO,Packet loss observed
+2024-12-19 11:01:17,Router3,WARNING,Firmware updated
+2024-12-19 11:04:35,Router2,ERROR,Authentication failure
+2024-12-19 11:05:41,Router2,INFO,High latency detected
+2024-12-19 11:06:43,Router4,ERROR,High latency detected
+2024-12-19 11:08:14,Router10,WARNING,Device unreachable
+2024-12-19 11:10:31,Router6,ERROR,Device unreachable
+2024-12-19 11:13:50,Router6,INFO,Packet loss observed
+2024-12-19 11:17:07,Router6,ERROR,Authentication failure
+2024-12-19 11:17:48,Router4,ERROR,Authentication failure
+2024-12-19 11:19:29,Router6,INFO,Connection established
+2024-12-19 11:19:43,Router9,WARNING,High latency detected
+2024-12-19 11:20:06,Router5,INFO,Firmware updated
+2024-12-19 11:22:01,Router8,ERROR,Connection timeout
+2024-12-19 11:28:56,Router2,ERROR,Configuration changed
+2024-12-19 11:30:38,Router1,WARNING,Device unreachable
+2024-12-19 11:33:47,Router4,ERROR,Connection timeout
+2024-12-19 11:36:24,Router9,WARNING,Device unreachable
+2024-12-19 11:38:11,Router10,INFO,Packet loss observed
+2024-12-19 11:38:40,Router5,ERROR,Firmware updated
+2024-12-19 11:43:54,Router1,ERROR,Device overheating
+2024-12-19 11:48:21,Router6,ERROR,Device unreachable
+2024-12-19 11:52:43,Router1,ERROR,Device unreachable
+2024-12-19 11:56:28,Router3,INFO,Connection lost
+2024-12-19 12:00:13,Router9,WARNING,Device overheating
+2024-12-19 12:02:09,Router3,ERROR,Authentication failure
+2024-12-19 12:04:06,Router5,WARNING,High latency detected
+2024-12-19 12:05:52,Router6,ERROR,Connection established
+2024-12-19 12:06:46,Router9,WARNING,Device unreachable
+2024-12-19 12:08:35,Router2,INFO,Device overheating
+2024-12-19 12:10:49,Router9,ERROR,Authentication failure
+2024-12-19 12:12:29,Router7,INFO,Connection lost
+2024-12-19 12:17:32,Router1,WARNING,Connection timeout
+2024-12-19 12:19:28,Router1,WARNING,Firmware updated
+2024-12-19 12:19:37,Router2,ERROR,High latency detected
+2024-12-19 12:21:39,Router7,INFO,Authentication failure
+2024-12-19 12:24:18,Router4,INFO,Connection timeout
+2024-12-19 12:27:47,Router4,WARNING,High latency detected
+2024-12-19 12:28:06,Router3,ERROR,Connection timeout
+2024-12-19 12:28:56,Router2,INFO,Device unreachable
+2024-12-19 12:29:00,Router8,WARNING,Connection lost
+2024-12-19 12:29:08,Router8,INFO,Firmware updated
+2024-12-19 12:29:40,Router10,ERROR,Packet loss observed
+2024-12-19 12:29:41,Router2,WARNING,Configuration changed
+2024-12-19 12:30:03,Router10,INFO,Firmware updated
+2024-12-19 12:31:16,Router9,ERROR,Device overheating
+2024-12-19 12:32:16,Router3,INFO,Configuration changed
+2024-12-19 12:32:28,Router9,INFO,Connection timeout
+2024-12-19 12:34:07,Router6,WARNING,Device overheating
+2024-12-19 12:35:12,Router8,ERROR,Authentication failure
+2024-12-19 12:36:03,Router6,ERROR,Connection lost
+2024-12-19 12:37:02,Router8,ERROR,Device overheating
+2024-12-19 12:37:18,Router3,WARNING,Authentication failure
+2024-12-19 12:38:53,Router5,INFO,Configuration changed
+2024-12-19 12:39:03,Router8,ERROR,Device unreachable
+2024-12-19 12:39:10,Router9,WARNING,Connection timeout
+2024-12-19 12:39:24,Router2,WARNING,Configuration changed
+2024-12-19 12:40:14,Router1,WARNING,Connection established
+2024-12-19 12:40:48,Router3,INFO,Connection timeout
+2024-12-19 12:41:29,Router10,WARNING,Connection timeout
+2024-12-19 12:43:29,Router8,INFO,Firmware updated
+2024-12-19 12:48:45,Router4,ERROR,Device overheating
+2024-12-19 12:51:48,Router4,INFO,Configuration changed
+2024-12-19 12:52:50,Router7,ERROR,Authentication failure
+2024-12-19 12:53:58,Router9,ERROR,Authentication failure
+2024-12-19 12:54:07,Router8,ERROR,Firmware updated
+2024-12-19 12:54:29,Router2,INFO,Connection established
+2024-12-19 12:57:05,Router7,WARNING,Device overheating
+2024-12-19 13:00:25,Router2,INFO,Connection timeout
+2024-12-19 13:12:18,Router6,INFO,Authentication failure
+2024-12-19 13:13:49,Router9,WARNING,Connection established
+2024-12-19 13:14:10,Router9,INFO,Configuration changed
+2024-12-19 13:15:00,Router5,ERROR,Authentication failure
+2024-12-19 13:15:10,Router3,ERROR,Device overheating
+2024-12-19 13:16:53,Router5,INFO,Device unreachable
+2024-12-19 13:18:11,Router6,INFO,Device unreachable
+2024-12-19 13:18:42,Router7,INFO,Device unreachable
+2024-12-19 13:19:32,Router4,ERROR,Authentication failure
+2024-12-19 13:19:37,Router2,WARNING,High latency detected
+2024-12-19 13:21:13,Router6,ERROR,Configuration changed
+2024-12-19 13:22:27,Router2,INFO,Connection timeout
+2024-12-19 13:23:24,Router9,WARNING,Device overheating
+2024-12-19 13:24:44,Router1,INFO,Connection established
+2024-12-19 13:26:25,Router7,ERROR,Configuration changed
+2024-12-19 13:29:21,Router1,WARNING,High latency detected
+2024-12-19 13:31:33,Router2,WARNING,Connection timeout
+2024-12-19 13:31:47,Router2,INFO,Device overheating
+2024-12-19 13:32:27,Router2,WARNING,Authentication failure
+2024-12-19 13:33:54,Router4,ERROR,Authentication failure
+2024-12-19 13:35:38,Router10,ERROR,Connection timeout
+2024-12-19 13:35:49,Router1,ERROR,Connection timeout
+2024-12-19 13:36:14,Router2,ERROR,Authentication failure
+2024-12-19 13:36:31,Router8,INFO,Device overheating
+2024-12-19 13:40:33,Router10,WARNING,Configuration changed
+2024-12-19 13:42:15,Router5,INFO,Connection established
+2024-12-19 13:42:32,Router3,INFO,Connection lost
+2024-12-19 13:44:16,Router7,INFO,Device unreachable
+2024-12-19 13:46:34,Router4,INFO,Connection lost
+2024-12-19 13:47:38,Router3,WARNING,Device overheating
+2024-12-19 13:48:24,Router3,ERROR,Device overheating
+2024-12-19 13:48:40,Router7,WARNING,Device overheating
+2024-12-19 13:50:05,Router3,ERROR,Connection timeout
+2024-12-19 13:52:23,Router9,INFO,Connection lost
+2024-12-19 13:53:59,Router1,INFO,Device unreachable
+2024-12-19 13:57:08,Router1,WARNING,Connection lost
+2024-12-19 13:57:56,Router2,INFO,Device overheating
+2024-12-19 13:58:01,Router8,INFO,Firmware updated
+2024-12-19 13:59:00,Router7,WARNING,High latency detected
+2024-12-19 13:59:46,Router1,INFO,Firmware updated
+2024-12-19 13:59:52,Router4,WARNING,Device unreachable
+2024-12-19 14:01:04,Router3,WARNING,Connection lost
+2024-12-19 14:01:07,Router2,ERROR,Connection lost
+2024-12-19 14:02:20,Router9,ERROR,Authentication failure
+2024-12-19 14:03:06,Router6,INFO,Device overheating
+2024-12-19 14:10:25,Router4,INFO,Device overheating
+2024-12-19 14:10:32,Router7,ERROR,Connection timeout
+2024-12-19 14:12:06,Router8,INFO,Configuration changed
+2024-12-19 14:12:43,Router1,ERROR,Device overheating
+2024-12-19 14:18:38,Router5,INFO,Firmware updated
+2024-12-19 14:19:21,Router5,WARNING,Firmware updated
+2024-12-19 14:20:48,Router10,ERROR,Authentication failure
+2024-12-19 14:20:58,Router6,ERROR,Connection timeout
+2024-12-19 14:22:47,Router1,WARNING,Device overheating
+2024-12-19 14:23:19,Router7,ERROR,Device overheating
+2024-12-19 14:24:31,Router4,ERROR,Connection timeout
+2024-12-19 14:24:53,Router5,ERROR,Configuration changed
+2024-12-19 14:25:22,Router7,ERROR,Connection lost
+2024-12-19 14:25:31,Router10,ERROR,Configuration changed
+2024-12-19 14:26:57,Router1,WARNING,Connection established
+2024-12-19 14:27:28,Router9,ERROR,High latency detected
+2024-12-19 14:29:26,Router9,WARNING,Authentication failure
+2024-12-19 14:30:35,Router7,WARNING,Packet loss observed
+2024-12-19 14:30:52,Router9,WARNING,Device overheating
+2024-12-19 14:32:55,Router3,INFO,Connection timeout
+2024-12-19 14:35:03,Router4,INFO,Packet loss observed
+2024-12-19 14:35:32,Router3,INFO,Device unreachable
+2024-12-19 14:44:55,Router5,ERROR,Device overheating
+2024-12-19 14:45:39,Router9,INFO,Device unreachable
+2024-12-19 14:45:41,Router6,ERROR,Packet loss observed
+2024-12-19 14:47:24,Router4,ERROR,Packet loss observed
+2024-12-19 14:49:35,Router2,ERROR,Firmware updated
+2024-12-19 14:51:11,Router10,INFO,Packet loss observed
+2024-12-19 14:53:29,Router10,WARNING,Device unreachable
+2024-12-19 14:55:52,Router2,INFO,Connection timeout
+2024-12-19 14:58:26,Router7,WARNING,Device overheating
+2024-12-19 14:59:09,Router8,INFO,Device overheating
+2024-12-19 15:04:11,Router5,WARNING,Connection lost
+2024-12-19 15:04:41,Router1,ERROR,Connection timeout
+2024-12-19 15:05:09,Router1,INFO,Connection established
+2024-12-19 15:05:30,Router6,INFO,High latency detected
+2024-12-19 15:05:33,Router4,INFO,Firmware updated
+2024-12-19 15:07:38,Router3,WARNING,Authentication failure
+2024-12-19 15:07:46,Router10,WARNING,Device unreachable
+2024-12-19 15:08:43,Router10,ERROR,Device unreachable
+2024-12-19 15:09:23,Router1,ERROR,Device overheating
+2024-12-19 15:10:16,Router8,INFO,Connection lost
+2024-12-19 15:12:12,Router10,WARNING,Packet loss observed
+2024-12-19 15:13:32,Router4,ERROR,Authentication failure
+2024-12-19 15:14:18,Router4,INFO,Connection timeout
+2024-12-19 15:15:00,Router5,ERROR,Firmware updated
+2024-12-19 15:15:25,Router6,ERROR,Device overheating
+2024-12-19 15:15:45,Router3,INFO,Configuration changed
+2024-12-19 15:18:26,Router1,WARNING,Device overheating
+2024-12-19 15:25:04,Router4,ERROR,Device unreachable
+2024-12-19 15:26:13,Router4,ERROR,Authentication failure
+2024-12-19 15:26:14,Router8,ERROR,Authentication failure
+2024-12-19 15:26:21,Router4,INFO,Connection timeout
+2024-12-19 15:29:29,Router6,ERROR,Device overheating
+2024-12-19 15:33:10,Router7,INFO,Connection lost
+2024-12-19 15:33:44,Router8,WARNING,Firmware updated
+2024-12-19 15:38:39,Router6,WARNING,Connection established
+2024-12-19 15:38:49,Router2,INFO,Connection timeout
+2024-12-19 15:43:58,Router8,WARNING,Packet loss observed
+2024-12-19 15:44:56,Router8,WARNING,Connection established
+2024-12-19 15:45:19,Router2,ERROR,Authentication failure
+2024-12-19 15:45:25,Router4,WARNING,Connection timeout
+2024-12-19 15:48:50,Router5,WARNING,High latency detected
+2024-12-19 15:50:02,Router9,WARNING,Device overheating
+2024-12-19 15:51:34,Router7,ERROR,Connection timeout
+2024-12-19 15:52:13,Router10,ERROR,Connection timeout
+2024-12-19 15:52:47,Router9,WARNING,Connection timeout
+2024-12-19 15:53:47,Router9,ERROR,Device unreachable
+2024-12-19 15:55:17,Router10,INFO,High latency detected
+2024-12-19 15:59:11,Router4,INFO,Device unreachable
+2024-12-19 16:01:03,Router2,ERROR,Connection lost
+2024-12-19 16:02:00,Router8,ERROR,Packet loss observed
+2024-12-19 16:02:45,Router7,ERROR,Device overheating
+2024-12-19 16:03:09,Router8,ERROR,Device overheating
+2024-12-19 16:03:35,Router10,ERROR,Firmware updated
+2024-12-19 16:03:52,Router7,WARNING,High latency detected
+2024-12-19 16:06:55,Router6,ERROR,Connection timeout
+2024-12-19 16:07:11,Router1,ERROR,Connection lost
+2024-12-19 16:10:28,Router6,INFO,Configuration changed
+2024-12-19 16:10:53,Router1,ERROR,Device overheating
+2024-12-19 16:13:42,Router3,ERROR,Authentication failure
+2024-12-19 16:17:12,Router6,ERROR,Device overheating
+2024-12-19 16:18:34,Router7,WARNING,Device unreachable
+2024-12-19 16:22:31,Router9,WARNING,Device overheating
+2024-12-19 16:24:13,Router4,WARNING,Connection timeout
+2024-12-19 16:28:42,Router8,INFO,Device overheating
+2024-12-19 16:29:21,Router9,WARNING,Device unreachable
+2024-12-19 16:31:04,Router4,ERROR,Device overheating
+2024-12-19 16:31:15,Router6,ERROR,Configuration changed
+2024-12-19 16:35:03,Router1,ERROR,Connection timeout
+2024-12-19 16:36:04,Router1,INFO,Authentication failure
+2024-12-19 16:37:38,Router6,ERROR,Connection timeout
+2024-12-19 16:37:44,Router2,INFO,Authentication failure
+2024-12-19 16:39:05,Router9,INFO,Connection timeout
+2024-12-19 16:40:18,Router4,INFO,Connection lost
+2024-12-19 16:40:27,Router6,ERROR,Device unreachable
+2024-12-19 16:41:07,Router4,INFO,Connection lost
+2024-12-19 16:44:01,Router6,WARNING,Connection established
+2024-12-19 16:44:01,Router8,INFO,High latency detected
+2024-12-19 16:44:55,Router9,ERROR,Device unreachable
+2024-12-19 16:47:39,Router2,ERROR,Device unreachable
+2024-12-19 16:47:44,Router9,INFO,Configuration changed
+2024-12-19 16:47:59,Router6,INFO,Configuration changed
+2024-12-19 16:51:23,Router6,WARNING,Firmware updated
+2024-12-19 16:52:04,Router1,ERROR,Connection timeout
+2024-12-19 16:52:16,Router1,ERROR,Connection timeout
+2024-12-19 16:52:52,Router3,ERROR,Device overheating
+2024-12-19 16:54:43,Router9,INFO,Connection timeout
+2024-12-19 16:56:26,Router8,WARNING,Authentication failure
+2024-12-19 16:56:47,Router5,WARNING,Connection established
+2024-12-19 16:57:20,Router8,INFO,Connection lost
+2024-12-19 16:58:38,Router2,ERROR,Device overheating
+2024-12-19 17:00:04,Router5,ERROR,Connection timeout
+2024-12-19 17:04:11,Router5,ERROR,Authentication failure
+2024-12-19 17:05:03,Router10,INFO,Connection established
+2024-12-19 17:08:46,Router3,WARNING,Device unreachable
+2024-12-19 17:10:13,Router8,ERROR,Device unreachable
+2024-12-19 17:11:56,Router6,ERROR,Device unreachable
+2024-12-19 17:14:36,Router4,ERROR,Device unreachable
+2024-12-19 17:14:38,Router9,INFO,Connection lost
+2024-12-19 17:14:53,Router4,ERROR,Authentication failure
+2024-12-19 17:16:12,Router9,ERROR,Connection lost
+2024-12-19 17:17:19,Router3,INFO,Packet loss observed
+2024-12-19 17:18:50,Router6,WARNING,High latency detected
+2024-12-19 17:21:01,Router9,INFO,Configuration changed
+2024-12-19 17:21:21,Router8,INFO,High latency detected
+2024-12-19 17:23:56,Router7,INFO,Connection timeout
+2024-12-19 17:23:56,Router1,INFO,Device unreachable
+2024-12-19 17:24:22,Router3,ERROR,Connection timeout
+2024-12-19 17:24:50,Router5,WARNING,Packet loss observed
+2024-12-19 17:25:10,Router10,INFO,Device overheating
+2024-12-19 17:26:15,Router8,INFO,Firmware updated
+2024-12-19 17:26:40,Router10,INFO,Connection established
+2024-12-19 17:27:05,Router6,WARNING,Packet loss observed
+2024-12-19 17:28:01,Router9,ERROR,Connection timeout
+2024-12-19 17:30:18,Router3,WARNING,Firmware updated
+2024-12-19 17:31:29,Router2,WARNING,Firmware updated
+2024-12-19 17:32:09,Router1,INFO,High latency detected
+2024-12-19 17:38:04,Router1,ERROR,Device overheating
+2024-12-19 17:38:18,Router2,WARNING,Configuration changed
+2024-12-19 17:39:30,Router5,WARNING,Configuration changed
+2024-12-19 17:39:33,Router1,INFO,Configuration changed
+2024-12-19 17:40:04,Router4,INFO,Firmware updated
+2024-12-19 17:40:42,Router8,INFO,Connection timeout
+2024-12-19 17:40:43,Router10,ERROR,Authentication failure
+2024-12-19 17:41:08,Router6,ERROR,Connection timeout
+2024-12-19 17:41:09,Router5,ERROR,Connection timeout
+2024-12-19 17:42:22,Router3,WARNING,Device overheating
+2024-12-19 17:42:52,Router6,INFO,Firmware updated
+2024-12-19 17:43:24,Router2,INFO,Packet loss observed
+2024-12-19 17:43:39,Router9,WARNING,High latency detected
+2024-12-19 17:44:22,Router10,INFO,Authentication failure
+2024-12-19 17:47:16,Router9,ERROR,Authentication failure
+2024-12-19 17:49:13,Router4,INFO,Device unreachable
+2024-12-19 17:49:30,Router8,WARNING,Connection established
+2024-12-19 17:49:32,Router6,ERROR,Authentication failure
+2024-12-19 17:51:54,Router1,WARNING,Firmware updated
+2024-12-19 17:52:05,Router1,INFO,Firmware updated
+2024-12-19 17:52:42,Router3,INFO,Device overheating
+2024-12-19 17:56:36,Router1,ERROR,Connection lost
+2024-12-19 17:57:39,Router6,INFO,Connection established
+2024-12-19 17:59:37,Router5,INFO,Device overheating
+2024-12-19 18:00:28,Router6,WARNING,Connection timeout
+2024-12-19 18:06:09,Router1,ERROR,Device unreachable
+2024-12-19 18:06:23,Router9,WARNING,Connection established
+2024-12-19 18:06:24,Router8,ERROR,Connection timeout
+2024-12-19 18:09:20,Router4,ERROR,Device overheating
+2024-12-19 18:11:32,Router4,INFO,Packet loss observed
+2024-12-19 18:11:51,Router6,ERROR,Authentication failure
+2024-12-19 18:14:44,Router7,ERROR,Device overheating
+2024-12-19 18:16:08,Router10,WARNING,Firmware updated
+2024-12-19 18:17:25,Router9,INFO,Connection lost
+2024-12-19 18:19:01,Router1,ERROR,Configuration changed
+2024-12-19 18:24:32,Router10,INFO,Device unreachable
+2024-12-19 18:25:46,Router8,WARNING,Connection lost
+2024-12-19 18:28:03,Router1,INFO,Packet loss observed
+2024-12-19 18:30:31,Router2,INFO,Device overheating
+2024-12-19 18:30:33,Router9,INFO,Configuration changed
+2024-12-19 18:31:39,Router10,ERROR,High latency detected
+2024-12-19 18:31:47,Router7,INFO,Connection timeout
+2024-12-19 18:32:04,Router10,ERROR,Connection timeout
+2024-12-19 18:37:17,Router3,INFO,Authentication failure
+2024-12-19 18:37:27,Router9,ERROR,Device unreachable
+2024-12-19 18:38:29,Router1,ERROR,Device overheating
+2024-12-19 18:38:34,Router6,ERROR,Packet loss observed
+2024-12-19 18:42:05,Router5,INFO,Device overheating
+2024-12-19 18:43:16,Router5,WARNING,High latency detected
+2024-12-19 18:44:57,Router8,ERROR,Device overheating
+2024-12-19 18:45:44,Router5,INFO,Device unreachable
+2024-12-19 18:47:14,Router6,ERROR,Authentication failure
+2024-12-19 18:49:07,Router4,INFO,Configuration changed
+2024-12-19 18:49:43,Router10,ERROR,Authentication failure
+2024-12-19 18:50:07,Router2,INFO,Authentication failure
+2024-12-19 18:50:32,Router5,INFO,Configuration changed
+2024-12-19 18:51:24,Router10,ERROR,Device unreachable
+2024-12-19 18:53:14,Router3,INFO,High latency detected
+2024-12-19 18:53:35,Router1,ERROR,Firmware updated
+2024-12-19 18:55:01,Router1,ERROR,Configuration changed
+2024-12-19 18:57:37,Router3,WARNING,Connection lost
+2024-12-19 18:57:45,Router2,ERROR,Device unreachable
+2024-12-19 18:59:46,Router6,WARNING,Firmware updated
+2024-12-19 18:59:55,Router8,INFO,Firmware updated
+2024-12-19 19:03:45,Router2,ERROR,Firmware updated
+2024-12-19 19:04:13,Router9,INFO,Connection established
+2024-12-19 19:06:02,Router4,INFO,Connection lost
+2024-12-19 19:09:06,Router1,INFO,Device overheating
+2024-12-19 19:11:09,Router7,ERROR,Firmware updated
+2024-12-19 19:11:35,Router10,ERROR,Configuration changed
+2024-12-19 19:11:53,Router5,INFO,Device unreachable
+2024-12-19 19:12:12,Router4,ERROR,Connection timeout
+2024-12-19 19:12:25,Router8,INFO,Device unreachable
+2024-12-19 19:12:26,Router1,INFO,Device unreachable
+2024-12-19 19:13:22,Router9,WARNING,Firmware updated
+2024-12-19 19:13:40,Router6,WARNING,Device overheating
+2024-12-19 19:14:05,Router8,WARNING,Authentication failure
+2024-12-19 19:14:37,Router9,WARNING,Configuration changed
+2024-12-19 19:15:50,Router9,INFO,Device overheating
+2024-12-19 19:16:23,Router9,WARNING,Device overheating
+2024-12-19 19:19:12,Router1,WARNING,Packet loss observed
+2024-12-19 19:20:03,Router9,WARNING,Device unreachable
+2024-12-19 19:20:05,Router1,WARNING,Connection timeout
+2024-12-19 19:21:20,Router9,INFO,Device unreachable
+2024-12-19 19:21:42,Router1,INFO,Connection lost
+2024-12-19 19:23:56,Router7,WARNING,Connection timeout
+2024-12-19 19:24:46,Router4,INFO,Configuration changed
+2024-12-19 19:25:32,Router4,INFO,Device overheating
+2024-12-19 19:26:13,Router10,INFO,Device overheating
+2024-12-19 19:26:31,Router2,INFO,High latency detected
+2024-12-19 19:26:35,Router1,ERROR,Device unreachable
+2024-12-19 19:27:06,Router6,ERROR,Device unreachable
+2024-12-19 19:27:31,Router1,INFO,Device overheating
+2024-12-19 19:28:51,Router6,ERROR,Connection established
+2024-12-19 19:30:30,Router5,INFO,Packet loss observed
+2024-12-19 19:33:13,Router8,ERROR,Configuration changed
+2024-12-19 19:35:37,Router2,INFO,Authentication failure
+2024-12-19 19:35:47,Router4,ERROR,Firmware updated
+2024-12-19 19:36:32,Router8,WARNING,High latency detected
+2024-12-19 19:37:35,Router5,INFO,Configuration changed
+2024-12-19 19:37:55,Router4,ERROR,Packet loss observed
+2024-12-19 19:38:08,Router6,ERROR,Device unreachable
+2024-12-19 19:38:11,Router5,WARNING,Connection lost
+2024-12-19 19:39:08,Router7,ERROR,Device overheating
+2024-12-19 19:39:31,Router3,WARNING,Connection lost
+2024-12-19 19:42:14,Router4,ERROR,Connection timeout
+2024-12-19 19:42:54,Router10,INFO,Device overheating
+2024-12-19 19:46:04,Router2,INFO,Connection lost
+2024-12-19 19:48:42,Router2,INFO,Authentication failure
+2024-12-19 19:49:56,Router3,ERROR,Connection timeout
+2024-12-19 19:50:14,Router1,ERROR,Connection lost
+2024-12-19 19:52:02,Router9,INFO,Configuration changed
+2024-12-19 19:52:18,Router3,WARNING,Connection lost
+2024-12-19 19:52:50,Router3,ERROR,Configuration changed
+2024-12-19 19:53:07,Router6,WARNING,Device overheating
+2024-12-19 19:54:10,Router4,ERROR,Connection timeout
+2024-12-19 19:55:51,Router6,ERROR,Authentication failure
+2024-12-19 19:57:12,Router4,WARNING,Connection established
+2024-12-19 19:57:18,Router1,ERROR,Authentication failure
+2024-12-19 19:57:33,Router3,ERROR,Device overheating
+2024-12-19 19:59:24,Router5,INFO,Connection timeout
+2024-12-19 20:03:57,Router6,WARNING,Connection timeout
+2024-12-19 20:04:28,Router5,ERROR,Authentication failure
+2024-12-19 20:04:32,Router2,INFO,High latency detected
+2024-12-19 20:05:08,Router8,ERROR,Configuration changed
+2024-12-19 20:09:36,Router9,ERROR,Firmware updated
+2024-12-19 20:10:21,Router5,ERROR,Connection timeout
+2024-12-19 20:11:47,Router5,ERROR,Device overheating
+2024-12-19 20:12:40,Router5,INFO,Packet loss observed
+2024-12-19 20:14:16,Router3,INFO,Connection established
+2024-12-19 20:17:47,Router9,WARNING,Device unreachable
+2024-12-19 20:18:22,Router4,WARNING,High latency detected
+2024-12-19 20:19:06,Router2,INFO,Connection established
+2024-12-19 20:20:47,Router10,WARNING,Device overheating
+2024-12-19 20:21:49,Router2,ERROR,Device overheating
+2024-12-19 20:21:57,Router3,ERROR,Device unreachable
+2024-12-19 20:22:44,Router2,ERROR,Authentication failure
+2024-12-19 20:23:54,Router8,INFO,Authentication failure
+2024-12-19 20:23:56,Router10,INFO,Configuration changed
+2024-12-19 20:25:00,Router8,WARNING,Device overheating
+2024-12-19 20:27:23,Router8,WARNING,Device unreachable
+2024-12-19 20:27:49,Router8,INFO,Packet loss observed
+2024-12-19 20:28:28,Router1,ERROR,Device overheating
+2024-12-19 20:29:13,Router3,ERROR,Device overheating
+2024-12-19 20:30:25,Router9,WARNING,Packet loss observed
+2024-12-19 20:31:45,Router9,INFO,Firmware updated
+2024-12-19 20:32:50,Router8,WARNING,Connection established
+2024-12-19 20:35:30,Router4,INFO,Connection timeout
+2024-12-19 20:36:00,Router5,INFO,Device overheating
+2024-12-19 20:36:36,Router1,ERROR,Device unreachable
+2024-12-19 20:37:22,Router3,WARNING,Connection lost
+2024-12-19 20:41:40,Router4,WARNING,Configuration changed
+2024-12-19 20:43:46,Router6,WARNING,Connection lost
+2024-12-19 20:43:46,Router8,INFO,High latency detected
+2024-12-19 20:47:32,Router2,ERROR,Connection lost
+2024-12-19 20:47:45,Router1,WARNING,Connection timeout
+2024-12-19 20:49:24,Router8,ERROR,Authentication failure
+2024-12-19 20:51:12,Router5,ERROR,Connection timeout
+2024-12-19 20:54:05,Router1,INFO,Connection established
+2024-12-19 20:54:54,Router7,INFO,Connection lost
+2024-12-19 20:55:26,Router10,INFO,Firmware updated
+2024-12-19 20:57:02,Router6,INFO,Device overheating
+2024-12-19 20:57:57,Router3,WARNING,Authentication failure
+2024-12-19 21:00:23,Router8,INFO,Connection lost
+2024-12-19 21:00:59,Router10,ERROR,Packet loss observed
+2024-12-19 21:02:27,Router4,INFO,Connection lost
+2024-12-19 21:06:02,Router1,INFO,Configuration changed
+2024-12-19 21:06:09,Router6,INFO,Connection lost
+2024-12-19 21:07:21,Router1,INFO,Packet loss observed
+2024-12-19 21:07:53,Router9,WARNING,Device unreachable
+2024-12-19 21:09:36,Router3,WARNING,High latency detected
+2024-12-19 21:09:39,Router7,INFO,Firmware updated
+2024-12-19 21:10:03,Router6,INFO,Device unreachable
+2024-12-19 21:12:19,Router4,WARNING,Firmware updated
+2024-12-19 21:14:56,Router1,ERROR,Authentication failure
+2024-12-19 21:15:19,Router5,INFO,High latency detected
+2024-12-19 21:16:31,Router2,WARNING,Connection timeout
+2024-12-19 21:16:35,Router3,INFO,Connection timeout
+2024-12-19 21:16:40,Router5,INFO,Connection timeout
+2024-12-19 21:17:15,Router5,WARNING,Device unreachable
+2024-12-19 21:18:29,Router1,WARNING,Device unreachable
+2024-12-19 21:19:17,Router10,WARNING,Connection timeout
+2024-12-19 21:22:20,Router6,ERROR,Connection timeout
+2024-12-19 21:22:52,Router1,ERROR,Authentication failure
+2024-12-19 21:23:07,Router6,INFO,Device overheating
+2024-12-19 21:24:02,Router3,INFO,Connection established
+2024-12-19 21:25:20,Router1,INFO,Packet loss observed
+2024-12-19 21:26:42,Router9,ERROR,Device unreachable
+2024-12-19 21:29:59,Router4,WARNING,Device unreachable
+2024-12-19 21:32:01,Router1,INFO,Configuration changed
+2024-12-19 21:32:37,Router8,ERROR,Device unreachable
+2024-12-19 21:32:42,Router1,ERROR,Device overheating
+2024-12-19 21:32:55,Router6,INFO,Connection timeout
+2024-12-19 21:34:09,Router3,ERROR,Connection established
+2024-12-19 21:38:22,Router1,ERROR,Connection timeout
+2024-12-19 21:39:16,Router1,ERROR,Connection timeout
+2024-12-19 21:39:48,Router5,INFO,Device unreachable
+2024-12-19 21:40:18,Router6,INFO,Configuration changed
+2024-12-19 21:41:48,Router5,WARNING,Configuration changed
+2024-12-19 21:44:00,Router6,INFO,Connection timeout
+2024-12-19 21:46:38,Router6,INFO,Firmware updated
+2024-12-19 21:47:00,Router2,ERROR,Packet loss observed
+2024-12-19 21:48:38,Router6,INFO,Device unreachable
+2024-12-19 21:49:05,Router10,INFO,Connection lost
+2024-12-19 21:49:20,Router2,ERROR,Connection timeout
+2024-12-19 21:52:55,Router9,INFO,Device unreachable
+2024-12-19 21:53:42,Router3,WARNING,Authentication failure
+2024-12-19 21:55:35,Router4,WARNING,Authentication failure
+2024-12-19 21:57:00,Router8,INFO,High latency detected
+2024-12-19 21:59:22,Router8,INFO,Device unreachable
+2024-12-19 21:59:32,Router8,INFO,Connection timeout
+2024-12-19 22:00:13,Router2,INFO,Connection established
+2024-12-19 22:01:02,Router2,ERROR,Connection established
+2024-12-19 22:05:00,Router9,INFO,Configuration changed
+2024-12-19 22:05:22,Router4,WARNING,Packet loss observed
+2024-12-19 22:06:04,Router4,ERROR,High latency detected
+2024-12-19 22:06:49,Router10,WARNING,Connection lost
+2024-12-19 22:06:51,Router4,INFO,Device overheating
+2024-12-19 22:07:57,Router3,INFO,Authentication failure
+2024-12-19 22:09:22,Router5,ERROR,Connection timeout
+2024-12-19 22:11:23,Router9,WARNING,Packet loss observed
+2024-12-19 22:11:58,Router6,WARNING,Firmware updated
+2024-12-19 22:12:53,Router2,ERROR,Connection lost
+2024-12-19 22:13:51,Router1,INFO,Packet loss observed
+2024-12-19 22:13:58,Router6,INFO,Device overheating
+2024-12-19 22:14:56,Router4,ERROR,Device overheating
+2024-12-19 22:15:24,Router7,ERROR,Connection timeout
+2024-12-19 22:15:37,Router4,WARNING,Connection established
+2024-12-19 22:19:09,Router8,ERROR,Device unreachable
+2024-12-19 22:25:31,Router4,WARNING,Packet loss observed
+2024-12-19 22:26:07,Router5,ERROR,Device unreachable
+2024-12-19 22:26:32,Router5,WARNING,Firmware updated
+2024-12-19 22:26:37,Router10,INFO,Connection timeout
+2024-12-19 22:27:43,Router9,INFO,Device overheating
+2024-12-19 22:27:45,Router10,ERROR,High latency detected
+2024-12-19 22:30:45,Router7,ERROR,Connection timeout
+2024-12-19 22:31:37,Router8,ERROR,Device unreachable
+2024-12-19 22:32:41,Router9,WARNING,Device unreachable
+2024-12-19 22:40:14,Router9,ERROR,Device unreachable
+2024-12-19 22:43:42,Router3,ERROR,Authentication failure
+2024-12-19 22:44:32,Router4,INFO,Device overheating
+2024-12-19 22:45:26,Router1,WARNING,Firmware updated
+2024-12-19 22:47:23,Router10,WARNING,Connection lost
+2024-12-19 22:47:38,Router8,ERROR,Connection timeout
+2024-12-19 22:47:54,Router2,ERROR,Packet loss observed
+2024-12-19 22:51:47,Router4,INFO,High latency detected
+2024-12-19 22:53:48,Router5,ERROR,Authentication failure
+2024-12-19 22:53:50,Router6,ERROR,Device unreachable
+2024-12-19 22:55:02,Router2,WARNING,Packet loss observed
+2024-12-19 22:55:30,Router10,ERROR,Device overheating
+2024-12-19 22:56:47,Router4,INFO,Device overheating
+2024-12-19 22:59:07,Router3,ERROR,Device unreachable
+2024-12-19 22:59:14,Router8,ERROR,Device overheating
+2024-12-19 22:59:16,Router8,INFO,Authentication failure
+2024-12-19 23:00:01,Router9,INFO,Configuration changed
+2024-12-19 23:00:50,Router5,ERROR,Device overheating
+2024-12-19 23:02:50,Router1,WARNING,Connection lost
+2024-12-19 23:03:06,Router6,ERROR,Device overheating
+2024-12-19 23:04:18,Router5,WARNING,Connection established
+2024-12-19 23:04:20,Router4,INFO,Connection established
+2024-12-19 23:06:43,Router2,ERROR,Authentication failure
+2024-12-19 23:07:21,Router1,ERROR,Authentication failure
+2024-12-19 23:08:21,Router6,INFO,Configuration changed
+2024-12-19 23:08:36,Router5,INFO,Authentication failure
+2024-12-19 23:08:43,Router2,WARNING,Connection established
+2024-12-19 23:09:00,Router6,WARNING,Packet loss observed
+2024-12-19 23:15:36,Router5,INFO,Packet loss observed
+2024-12-19 23:16:50,Router2,INFO,Device overheating
+2024-12-19 23:18:24,Router2,INFO,Packet loss observed
+2024-12-19 23:19:30,Router7,ERROR,Configuration changed
+2024-12-19 23:19:45,Router3,ERROR,High latency detected
+2024-12-19 23:19:55,Router4,WARNING,Connection timeout
+2024-12-19 23:24:46,Router1,WARNING,High latency detected
+2024-12-19 23:27:42,Router8,INFO,Connection lost
+2024-12-19 23:28:36,Router2,INFO,Device overheating
+2024-12-19 23:28:42,Router7,INFO,Device overheating
+2024-12-19 23:28:50,Router10,ERROR,Device overheating
+2024-12-19 23:29:02,Router1,INFO,Connection lost
+2024-12-19 23:30:58,Router10,ERROR,Device overheating
+2024-12-19 23:31:03,Router3,INFO,Connection established
+2024-12-19 23:33:27,Router4,ERROR,Device overheating
+2024-12-19 23:34:45,Router2,WARNING,Device overheating
+2024-12-19 23:35:00,Router9,INFO,Packet loss observed
+2024-12-19 23:38:19,Router7,INFO,Configuration changed
+2024-12-19 23:38:49,Router10,WARNING,Connection timeout
+2024-12-19 23:40:16,Router5,ERROR,Device unreachable
+2024-12-19 23:41:36,Router9,INFO,Firmware updated
+2024-12-19 23:41:56,Router1,WARNING,Connection established
+2024-12-19 23:43:13,Router4,ERROR,Device unreachable
+2024-12-19 23:46:40,Router8,ERROR,Device overheating
+2024-12-19 23:48:13,Router3,INFO,Packet loss observed
+2024-12-19 23:49:41,Router5,ERROR,Configuration changed
+2024-12-19 23:50:16,Router4,ERROR,Connection timeout
+2024-12-19 23:51:56,Router10,INFO,Connection lost
+2024-12-19 23:52:03,Router9,INFO,Device unreachable
+2024-12-19 23:56:32,Router10,ERROR,Authentication failure
