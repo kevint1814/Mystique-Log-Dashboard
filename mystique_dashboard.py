@@ -46,7 +46,7 @@ def detect_anomalies(logs, sensitivity=0.3):
     return logs
 
 # Enhanced AI explanation function
-def get_ai_explanation(prompt, api_key, max_tokens=500, retries=3):
+def get_ai_explanation(prompt , api_key, max_tokens=500, retries=3):
     """
     Fetch AI-generated explanation with retries and error handling.
     """
@@ -105,7 +105,6 @@ def translate_query(query, target_language="en"):
         return translated_text, detected_language
     return query, target_language
 
-
 def get_enhanced_chatbot_response(user_input, api_key):
     predefined_responses = {
         "What does this app do?": "This app analyzes telecom logs using AI. It detects anomalies, summarizes logs, and helps identify root causes of network outages.",
@@ -118,7 +117,7 @@ def get_enhanced_chatbot_response(user_input, api_key):
         "What does the heatmap show?": "The heatmap visualizes the distribution of log levels (INFO, WARNING, ERROR) across devices, helping identify patterns or anomalies.",
         "How are anomalies detected?": "Anomalies are detected using machine learning models, such as Isolation Forest, which analyze log attributes to identify unusual patterns.",
         "Can the app summarize logs?": "Yes, the app uses AI to provide summaries of the logs in simple terms, making it easier to understand key events.",
-        "What is the most common log level?": "The most common log level depends on the dataset. Use the 'Visualizations' section to analyze log-level distributions.",
+ "What is the most common log level?": "The most common log level depends on the dataset. Use the 'Visualizations' section to analyze log-level distributions.",
         "What is the 'sensitivity' slider in anomaly detection?": "The sensitivity slider adjusts the threshold for anomaly detection. Higher sensitivity detects more anomalies but may include false positives.",
         "How do I interpret the time series plot?": "The time series plot shows trends in log levels over time, highlighting spikes or drops in log activity.",
         "How do I analyze logs for a specific device?": "You can use the interactive filter in the 'Root Cause Analysis' section to focus on logs from a specific device.",
@@ -195,7 +194,7 @@ elif option == "Root Cause Analysis":
         limited_root_causes = filtered_data.head(explanation_limit).values.tolist()
         prompt = (
             "The following root causes were identified from the logs:\n" +
-            "\n".join([f"{row[0]} - {row[1]}: {row[2]}" for row in limited_root_causes]) +
+            "\n".join([f"{row[0]} - {row[1]}: {row[2]}" for row in limited_root_ca uses]) +
             f"\n(Showing only the first {explanation_limit} root causes).\n" +
             "Explain the root causes in simple terms that a non-technical audience can understand."
         )
@@ -293,9 +292,8 @@ elif option == "Visualizations":
             "The heatmap shows the distribution of log levels (INFO, WARNING, ERROR) across devices. "
             "Explain any noticeable patterns or anomalies in the data."
         )
-        explanation = get_ai_explanation(prompt, API_KEY, max_tokens=400)
+        explanation = get_ai_explanation(prompt, API_KEY , max_tokens=400)
         st.write(f"**AI Explanation:** {explanation}")
-
 
 elif option == "Chatbot":
     st.title("Chat with AI")
@@ -322,7 +320,7 @@ elif option == "Chatbot":
     # Display conversation
     for message in st.session_state.messages:
         if message["role"] == "user":
-            st.write(f"**User:** {message['content']}")
+            st.write(f"**User :** {message['content']}")
         else:
             st.write(f"**AI:** {message['content']}")
 
