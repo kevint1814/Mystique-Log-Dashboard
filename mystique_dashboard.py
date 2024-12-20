@@ -306,31 +306,18 @@ elif option == "Chatbot":
     
     if user_input:
         # Detect language and translate if necessary
-        translated_input = user_input
-        detected_language = "en"
+        translated_input, detected_language = translate_query(user_input)
 
-        # Try to detect and translate the input
-        try:
-            translated_input, detected_language = translate_query(user_input, target_language="en")
-        except Exception as e:
-            st.warning("Language detection or translation failed. Proceeding with the original input.")
-
-    # Add user input to chat history
-    st.session_state.messages.append({"role": "user", "content": user_input})
-
-    # Get AI response
-    ai_response = get_enhanced_chatbot_response(translated_input, API_KEY)
-
-    # Translate response back to the original language if necessary
-    if detected_language != "en":
-        try:
+        # Display user input in chat history
+        st.session_state.messages.append({"role": "user", "content": user_input})
+        
+        # Get AI response
+        ai_response = get_enhanced_chatbot_response(translated_input, API_KEY)
+        if detected_language != "en":
             ai_response = translator.translate(ai_response, src="en", dest=detected_language).text
-        except Exception as e:
-            st.error("Translation of the response failed. Showing the response in English.")
 
-    # Add AI response to chat history
-    st.session_state.messages.append({"role": "assistant", "content": ai_response})
-
+        st.session_state.messages.append({"role": "assistant", "content": ai_response})
+        
     # Display conversation
     for message in st.session_state.messages:
         if message["role"] == "user":
