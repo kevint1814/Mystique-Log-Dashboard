@@ -305,19 +305,32 @@ elif option == "Chatbot":
     user_input = st.text_input("Ask a question about the logs:", placeholder="Ask about anomaly detection, root cause analysis, etc.")
     
     if user_input:
-        # Detect language and translate if necessary
-        translated_input, detected_language = translate_query(user_input)
-
-        # Display user input in chat history
-        st.session_state.messages.append({"role": "user", "content": user_input})
+        # Default to the original input and English if translation fails
+        translated_input = user_input
+        detected_language = "en"
         
+        try:
+            # Detect and translate input
+            translated_input, detected_language = translate_query(user_input)
+        except Exception as e:
+            st.warning("Could not detect or translate the input. Proceeding with the original input.")
+
+        # Add user input to chat history
+        st.session_state.messages.append({"role": "user", "content": user_input})
+
         # Get AI response
         ai_response = get_enhanced_chatbot_response(translated_input, API_KEY)
-        if detected_language != "en":
-            ai_response = translator.translate(ai_response, src="en", dest=detected_language).text
 
+        # Translate response back to the original language if it's not English
+        if detected_language != "en":
+            try:
+                ai_response = translator.translate(ai_response, src="en", dest=detected_language).text
+            except Exception as e:
+                st.error("Failed to translate the response. Displaying response in English.")
+
+        # Add AI response to chat history
         st.session_state.messages.append({"role": "assistant", "content": ai_response})
-        
+
     # Display conversation
     for message in st.session_state.messages:
         if message["role"] == "user":
