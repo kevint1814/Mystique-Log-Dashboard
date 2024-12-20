@@ -28,7 +28,7 @@ if lottie_animation:
     st_lottie(lottie_animation, speed=1, width=700, height=400, key="home_animation")
 
 # Load the dataset
-file_path = "Clear_Anomalies_Telecom_Logs_Dataset.csv."
+file_path = "Clear_Anomalies_Telecom_Logs_Dataset.csv"
 telecom_logs = pd.read_csv(file_path)
 
 # GroqCloud API Key
