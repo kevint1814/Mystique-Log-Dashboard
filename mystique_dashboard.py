@@ -4,6 +4,7 @@ st.set_page_config(page_title="Mystique Dashboard", layout="wide")
 
 # Now you can import other libraries
 import pandas as pd
+import os
 from sklearn.ensemble import IsolationForest
 import altair as alt
 import requests
@@ -27,11 +28,12 @@ if lottie_animation:
     st_lottie(lottie_animation, speed=1, width=700, height=400, key="home_animation")
 
 # Load the dataset
-file_path = "Clear_Anomalies_Telecom_Logs_Dataset.csv"
+file_path = "Clear_Anomalies_Telecom_Logs_Dataset.csv."
 telecom_logs = pd.read_csv(file_path)
 
 # GroqCloud API Key
-API_KEY = "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"
+API_KEY = os.getenv("GROQCLOUD_API_KEY")
+
 
 # Anomaly detection function
 def detect_anomalies(logs, sensitivity=0.3):
@@ -107,7 +109,23 @@ def get_enhanced_chatbot_response(user_input, api_key):
     predefined_responses = {
         "What does this app do?": "This app analyzes telecom logs using AI. It detects anomalies, summarizes logs, and helps identify root causes of network outages.",
         "How does anomaly detection work?": "Anomaly detection identifies unusual patterns in the logs that might indicate potential issues in the telecom network.",
-        "What is root cause analysis?": "Root cause analysis identifies the underlying cause of network issues by analyzing logs and anomalies, helping operators resolve problems faster."
+        "What is root cause analysis?": "Root cause analysis identifies the underlying cause of network issues by analyzing logs and anomalies, helping operators resolve problems faster.",
+        "How does the visualization feature work?": "The visualization feature provides insights into the log data through bar charts, pie charts, time series plots, and heatmaps.",
+        "Can I filter logs by device?": "Yes, in the 'Root Cause Analysis' section, you can filter logs by device using the interactive filter.",
+        "What is the purpose of the chatbot?": "The chatbot helps answer questions about the logs, anomaly detection, root cause analysis, and the app's features.",
+        "How can I download the anomaly data?": "In the 'Anomaly Detection' section, after detecting anomalies, you can use the download button to save the anomaly data as a CSV file.",
+        "What does the heatmap show?": "The heatmap visualizes the distribution of log levels (INFO, WARNING, ERROR) across devices, helping identify patterns or anomalies.",
+        "How are anomalies detected?": "Anomalies are detected using machine learning models, such as Isolation Forest, which analyze log attributes to identify unusual patterns.",
+        "Can the app summarize logs?": "Yes, the app uses AI to provide summaries of the logs in simple terms, making it easier to understand key events.",
+        "What is the most common log level?": "The most common log level depends on the dataset. Use the 'Visualizations' section to analyze log-level distributions.",
+        "What is the 'sensitivity' slider in anomaly detection?": "The sensitivity slider adjusts the threshold for anomaly detection. Higher sensitivity detects more anomalies but may include false positives.",
+        "How do I interpret the time series plot?": "The time series plot shows trends in log levels over time, highlighting spikes or drops in log activity.",
+        "How do I analyze logs for a specific device?": "You can use the interactive filter in the 'Root Cause Analysis' section to focus on logs from a specific device.",
+        "What kind of logs does this app process?": "The app processes telecom network logs, including timestamps, devices, log levels (INFO, WARNING, ERROR), and messages.",
+        "What should I do if the app doesn't detect anomalies?": "If no anomalies are detected, try adjusting the sensitivity slider in the 'Anomaly Detection' section or ensure the dataset is properly loaded.",
+        "How does AI explain visualizations?": "The app uses AI to generate explanations for visualizations, providing insights into the patterns and trends shown in the charts.",
+        "What are common root causes in telecom logs?": "Common root causes include connection timeouts, device unreachability, authentication failures, high latency, and device overheating.",
+        "Can I provide feedback on the chatbot?": "Yes, you can use the feedback section in the chatbot to indicate if the response was helpful."
     }
 
     # Dynamic context awareness
@@ -325,4 +343,4 @@ elif option == "Conclusion":
         - 📈 Actionable insights
         - 🔍 Accurate root cause analysis
     """)
-    st.write("Team Members: Kevin T, Shifana Azeem, Delicia Rachel Origanti, Pataan Eshaan Ahmed Khan")
+    st.write("Team Members: Kevin T, Shifana Azeem, Delicia Rachel Origanti, Pattan Eshaan Ahmed Khan")
