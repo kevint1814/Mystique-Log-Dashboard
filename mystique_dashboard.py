@@ -305,15 +305,17 @@ elif option == "Chatbot":
     user_input = st.text_input("Ask a question about the logs:", placeholder="Ask about anomaly detection, root cause analysis, etc.")
     
     if user_input:
-        # Default to the original input and English if translation fails
+        # Default to the original input and English if language detection fails or is ambiguous
         translated_input = user_input
         detected_language = "en"
         
         try:
-            # Detect and translate input
-            translated_input, detected_language = translate_query(user_input)
+            # Detect and translate input only if not English
+            detected_language = detect(user_input)
+            if detected_language != "en":
+                translated_input = translator.translate(user_input, src=detected_language, dest="en").text
         except Exception as e:
-            st.warning("Could not detect or translate the input. Proceeding with the original input.")
+            st.warning("Language detection failed. Proceeding with the original input.")
 
         # Add user input to chat history
         st.session_state.messages.append({"role": "user", "content": user_input})
@@ -321,12 +323,12 @@ elif option == "Chatbot":
         # Get AI response
         ai_response = get_enhanced_chatbot_response(translated_input, API_KEY)
 
-        # Translate response back to the original language if it's not English
+        # Translate response back to the original language only if necessary
         if detected_language != "en":
             try:
                 ai_response = translator.translate(ai_response, src="en", dest=detected_language).text
             except Exception as e:
-                st.error("Failed to translate the response. Displaying response in English.")
+                st.warning("Failed to translate the response. Displaying the response in English.")
 
         # Add AI response to chat history
         st.session_state.messages.append({"role": "assistant", "content": ai_response})
