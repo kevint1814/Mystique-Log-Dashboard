@@ -105,6 +105,7 @@ def translate_query(query, target_language="en"):
         return translated_text, detected_language
     return query, target_language
 
+
 def get_enhanced_chatbot_response(user_input, api_key):
     predefined_responses = {
         "What does this app do?": "This app analyzes telecom logs using AI. It detects anomalies, summarizes logs, and helps identify root causes of network outages.",
