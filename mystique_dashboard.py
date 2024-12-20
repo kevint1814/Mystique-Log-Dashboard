@@ -43,24 +43,39 @@ def detect_anomalies(logs, sensitivity=0.3):
     logs["anomaly"] = logs["anomaly_prediction"].apply(lambda x: "Anomaly" if x == -1 else "Normal")
     return logs
 
+# Enhanced AI explanation function
+def get_ai_explanation(prompt, api_key, max_tokens=500, retries=3):
+    """
+    Fetch AI-generated explanation with retries and error handling.
+    """
+    url = "https://api.groq.com/openai/v1/chat/completions"
+    headers = {"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"}
+    
+    for attempt in range(retries):
+        payload = {
+            "model": "llama3-8b-8192",
+            "messages": [{"role": "user", "content": prompt}],
+            "max_tokens": max_tokens
+        }
+        response = requests.post(url, json=payload, headers=headers)
+        
+        if response.status_code == 200:
+            content = response.json().get("choices", [{}])[0].get("message", {}).get("content", "")
+            if content:
+                return content  # Return valid explanation
+        else:
+            st.error(f"Error {response.status_code}: {response.json().get('error', {}).get('message', 'Unknown error')}")
+    
+    return "Explanation could not be retrieved. Please try again."
+
 # AI-Powered log summarization
 def summarize_logs_with_ai(api_key, logs, num_logs=5):
-    url = "https://api.groq.com/openai/v1/chat/completions"
     formatted_logs = "\n".join([
         f"At {row['timestamp']}, {row['device']} experienced: {row['message']} ({row['log_level']} level)."
         for _, row in logs.head(num_logs).iterrows()
     ])
-    payload = {
-        "model": "llama3-8b-8192",
-        "messages": [{"role": "user", "content": f"Summarize the following logs:\n{formatted_logs}"}],
-        "max_tokens": 500
-    }
-    headers = {"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"}
-    response = requests.post(url, json=payload, headers=headers)
-    if response.status_code == 200:
-        return response.json().get("choices", [{}])[0].get("message", {}).get("content", "No summary available")
-    else:
-        return f"Error {response.status_code}: {response.json().get('error', {}).get('message', 'Unknown error')}"
+    prompt = f"Summarize the following logs:\n{formatted_logs}"
+    return get_ai_explanation(prompt, api_key)
 
 # Root cause analysis based on logs
 def root_cause_analysis(logs):
@@ -99,19 +114,8 @@ def get_enhanced_chatbot_response(user_input, api_key):
     if user_input in predefined_responses:
         return predefined_responses[user_input]
 
-    url = "https://api.groq.com/openai/v1/chat/completions"
-    payload = {
-        "model": "llama3-8b-8192",
-        "messages": [{"role": "user", "content": user_input}],
-        "max_tokens": 300
-    }
-    headers = {"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"}
-    response = requests.post(url, json=payload, headers=headers)
-
-    if response.status_code == 200:
-        return response.json().get("choices", [{}])[0].get("message", {}).get("content", "Sorry, I couldn't understand that.")
-    else:
-        return f"Error {response.status_code}: {response.json().get('error', {}).get('message', 'Unknown error')}"
+    prompt = user_input
+    return get_ai_explanation(prompt, api_key, max_tokens=300)
 
 # Streamlit UI
 # Sidebar navigation
@@ -141,23 +145,11 @@ elif option == "Anomaly Detection":
         # AI Explanation for detected anomalies
         total_logs = len(telecom_logs)
         anomaly_count = len(anomalies)
-        explanation_prompt = (
+        prompt = (
             f"We detected {anomaly_count} anomalies out of {total_logs} logs in a telecom network. "
             "Explain the significance of these anomalies in simple terms for a non-technical audience."
         )
-        payload = {
-            "model": "llama3-8b-8192",
-            "messages": [{"role": "user", "content": explanation_prompt}],
-            "max_tokens": 300
-        }
-        headers = {"Authorization": f"Bearer {API_KEY}", "Content-Type": "application/json"}
-        response = requests.post("https://api.groq.com/openai/v1/chat/completions", json=payload, headers=headers)
-
-        if response.status_code == 200:
-            explanation = response.json().get("choices", [{}])[0].get("message", {}).get("content", "No explanation available.")
-        else:
-            explanation = f"Error {response.status_code}: {response.json().get('error', {}).get('message', 'Unknown error')}"
-
+        explanation = get_ai_explanation(prompt, API_KEY, max_tokens=400)
         st.markdown(f"**AI Explanation:** {explanation}")
     else:
         st.warning("No anomalies detected with the current sensitivity.")
@@ -182,32 +174,20 @@ elif option == "Root Cause Analysis":
         # AI Explanation for Root Cause Analysis
         explanation_limit = 5
         limited_root_causes = filtered_data.head(explanation_limit).values.tolist()
-        explanation_prompt = (
+        prompt = (
             "The following root causes were identified from the logs:\n" +
             "\n".join([f"{row[0]} - {row[1]}: {row[2]}" for row in limited_root_causes]) +
             f"\n(Showing only the first {explanation_limit} root causes).\n" +
             "Explain the root causes in simple terms that a non-technical audience can understand."
         )
-        payload = {
-            "model": "llama3-8b-8192",
-            "messages": [{"role": "user", "content": explanation_prompt}],
-            "max_tokens": 300
-        }
-        headers = {"Authorization": f"Bearer {API_KEY}", "Content-Type": "application/json"}
-        response = requests.post("https://api.groq.com/openai/v1/chat/completions", json=payload, headers=headers)
-
-        if response.status_code == 200:
-            explanation = response.json().get("choices", [{}])[0].get("message", {}).get("content", "No explanation available.")
-        else:
-            explanation = f"Error {response.status_code}: {response.json().get('error', {}).get('message', 'Unknown error')}"
-
+        explanation = get_ai_explanation(prompt, API_KEY, max_tokens=400)
         st.markdown(f"**AI Explanation:** {explanation}")
     else:
         st.warning("No root causes detected in the logs.")
 
 elif option == "Visualizations":
     st.title("Visualizations")
-    chart_type = st.selectbox("Select chart type:", ["Bar Chart", "Pie Chart"])
+    chart_type = st.selectbox("Select chart type:", ["Bar Chart", "Pie Chart", "Time Series Plot", "Heatmap"])
     log_summary_chart = telecom_logs["log_level"].value_counts().reset_index()
     log_summary_chart.columns = ["log_level", "count"]
 
@@ -221,26 +201,14 @@ elif option == "Visualizations":
         st.altair_chart(bar_chart, use_container_width=True)
 
         # AI Explanation for Bar Chart
-        explanation_prompt = (
+        prompt = (
             f"The bar chart shows the distribution of log levels as follows: "
             f"INFO: {log_summary_chart.loc[log_summary_chart['log_level'] == 'INFO', 'count'].values[0]}, "
             f"ERROR: {log_summary_chart.loc[log_summary_chart['log_level'] == 'ERROR', 'count'].values[0]}, "
             f"WARNING: {log_summary_chart.loc[log_summary_chart['log_level'] == 'WARNING', 'count'].values[0]}. "
             "Explain this chart in simple terms for a non-technical audience."
         )
-        payload = {
-            "model": "llama3-8b-8192",
-            "messages": [{"role": "user", "content": explanation_prompt}],
-            "max_tokens": 300
-        }
-        headers = {"Authorization": f"Bearer {API_KEY}", "Content-Type": "application/json"}
-        response = requests.post("https://api.groq.com/openai/v1/chat/completions", json=payload, headers=headers)
-
-        if response.status_code == 200:
-            explanation = response.json().get("choices", [{}])[0].get("message", {}).get("content", "No explanation available.")
-        else:
-            explanation = f"Error {response.status_code}: {response.json().get('error', {}).get('message', 'Unknown error')}"
-
+        explanation = get_ai_explanation(prompt, API_KEY, max_tokens=400)
         st.write(f"**AI Explanation:** {explanation}")
 
     elif chart_type == "Pie Chart":
@@ -253,27 +221,62 @@ elif option == "Visualizations":
         st.altair_chart(pie_chart, use_container_width=True)
 
         # AI Explanation for Pie Chart
-        explanation_prompt = (
+        prompt = (
             f"The pie chart shows the proportion of log levels: "
             f"INFO: {log_summary_chart.loc[log_summary_chart['log_level'] == 'INFO', 'count'].values[0]}, "
             f"ERROR: {log_summary_chart.loc[log_summary_chart['log_level'] == 'ERROR', 'count'].values[0]}, "
             f"WARNING: {log_summary_chart.loc[log_summary_chart['log_level'] == 'WARNING', 'count'].values[0]}. "
             "Explain this chart in simple terms for a non-technical audience."
         )
-        payload = {
-            "model": "llama3-8b-8192",
-            "messages": [{"role": "user", "content": explanation_prompt}],
-            "max_tokens": 300
-        }
-        headers = {"Authorization": f"Bearer {API_KEY}", "Content-Type": "application/json"}
-        response = requests.post("https://api.groq.com/openai/v1/chat/completions", json=payload, headers=headers)
-
-        if response.status_code == 200:
-            explanation = response.json().get("choices", [{}])[0].get("message", {}).get("content", "No explanation available.")
-        else:
-            explanation = f"Error {response.status_code}: {response.json().get('error', {}).get('message', 'Unknown error')}"
-
+        explanation = get_ai_explanation(prompt, API_KEY, max_tokens=400)
         st.write(f"**AI Explanation:** {explanation}")
+
+    elif chart_type == "Time Series Plot":
+        # Time Series Plot
+        telecom_logs["timestamp"] = pd.to_datetime(telecom_logs["timestamp"])
+        time_series_data = telecom_logs.groupby(["timestamp", "log_level"]).size().reset_index(name="count")
+        time_series_plot = px.line(
+            time_series_data, 
+            x="timestamp", 
+            y="count", 
+            color="log_level", 
+            title="Time Series of Log Levels",
+            labels={"count": "Log Count", "timestamp": "Time"}
+        )
+        st.plotly_chart(time_series_plot, use_container_width=True)
+
+        # AI Explanation for Time Series Plot
+        prompt = (
+            f"The time series plot shows trends in log levels (INFO, WARNING, ERROR) over time. "
+            "Provide insights about any significant patterns or spikes in the data."
+        )
+        explanation = get_ai_explanation(prompt, API_KEY, max_tokens=400)
+        st.write(f"**AI Explanation:** {explanation}")
+
+    elif chart_type == "Heatmap":
+        # Heatmap
+        heatmap_data = telecom_logs.pivot_table(
+            index="device",
+            columns="log_level",
+            values="timestamp",
+            aggfunc="count",
+            fill_value=0
+        )
+        heatmap = px.imshow(
+            heatmap_data,
+            title="Heatmap of Log Levels Across Devices",
+            labels={"color": "Log Count"}
+        )
+        st.plotly_chart(heatmap, use_container_width=True)
+
+        # AI Explanation for Heatmap
+        prompt = (
+            "The heatmap shows the distribution of log levels (INFO, WARNING, ERROR) across devices. "
+            "Explain any noticeable patterns or anomalies in the data."
+        )
+        explanation = get_ai_explanation(prompt, API_KEY, max_tokens=400)
+        st.write(f"**AI Explanation:** {explanation}")
+
 
 elif option == "Chatbot":
     st.title("Chat with AI")
@@ -322,4 +325,4 @@ elif option == "Conclusion":
         - 📈 Actionable insights
         - 🔍 Accurate root cause analysis
     """)
-    st.write("Team Members: Kevin T, Shifana Azeem, Delicia Rachel Origanti, Pattan Eshaan Ahmed Khan")
+    st.write("Team Members: Kevin T, Shifana Azeem, Delicia Rachel Origanti, Pataan Eshaan Ahmed Khan")
