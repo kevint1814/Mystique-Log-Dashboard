@@ -55,7 +55,7 @@ def get_ai_explanation(prompt, api_key, max_tokens=500, retries=3):
     
     for attempt in range(retries):
         payload = {
-            "model": "llama3-8b-8192",
+            "model": "llama-3.1-8b-instant",
             "messages": [{"role": "user", "content": prompt}],
             "max_tokens": max_tokens
         }
